@@ -1,0 +1,85 @@
+@media (max-width: 1600px){
+    #innerCircle .slides svg{
+        display: none;
+    }
+}
+
+@media (max-width: 1480px){
+    #innerCircle .slides .slideText .titleAndDesc p{
+        font-size: 1.3rem;
+        width: 40ch;
+    }
+}
+
+@media (max-width: 1220px){
+    #rAndB, #opm, #rap, #indie{
+        height: 200px;
+        width: 200px;
+    }
+    .musicTasteContent .overlay .circle{
+        width: 40px;
+        height: 40px;
+    }
+    .musicTasteContent .overlay h3{
+        font-size: 2rem;
+    }
+    .musicTasteContent .overlay p{
+        width: 20ch;
+    }
+    .musicTasteContent .images{
+        column-gap: 2em;
+        row-gap: 1.5em;
+    }
+    .musicTasteContent .musicTasteText h1{
+        font-size: 5rem;
+    }
+    .musicTasteContent .musicTasteText #musicTasteDesc{
+        font-size: 1.5rem;
+    }
+    
+    .musicTasteContent .musicTasteText #guide{
+        font-weight: 800;
+        font-size: 1.2rem;
+        padding: .3em .6em
+    }
+}
+
+@media (max-width: 1070px){
+    #innerCircle .slides .slideText .titleAndDesc p{
+        font-size: 1.2rem;
+        width: 30ch;
+    }
+    #innerCircle .slides .slideText .titleAndDesc h2{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 900px){
+    #innerCircle .slides .slideText .titleAndDesc p{
+        font-size: 1rem;
+        width: 30ch;
+    }
+    #innerCircle .slides .slideText .titleAndDesc h2{
+        font-size: 1.5rem;
+    }
+    #innerCircle .slides .slideText .imgContainer{
+        height: 300px;
+        width: 200px;
+        margin-right: 10px;
+    }
+    #innerCircle .slides .slideText .imgContainer img{
+        height: 300px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 650px){
+    #innerCircle .slides .slideText .titleAndDesc p{
+        font-size: 1rem;
+        width: 20ch;
+    }
+    #innerCircle .slides{
+        gap: 10px;
+        justify-content: center;
+    }
+}

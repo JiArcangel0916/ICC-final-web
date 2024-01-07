@@ -1,0 +1,769 @@
+body{
+    background-color: #1B1A17;
+}
+
+h1{
+    font-weight: 800;
+}
+
+/* HEADER SECTION*/
+.navbar li{
+    padding-bottom: 0px;
+}
+
+#aboutMe{
+    border-bottom-color:#F0A500;
+    color: #F0A500;
+}
+
+section{
+    height: 100vh;
+    padding: 60px;
+}
+
+/* ABOUT ME */
+#aboutMeSection{
+    background-color: #1B1A17;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+#discover{
+    text-align: center;
+    color: #E45826;
+    font-size: 1.2rem;
+}
+
+#aboutTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-weight: 800;
+}
+
+.bar{
+    border: 4px solid;
+    width: 90px;
+}
+
+h1{
+    font-size: 4rem;
+    color: white;
+}
+
+#aboutMeSection .text{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: flex;
+    gap: 4rem;
+    font-weight: 300;
+}
+
+img{
+    height: 900px;
+    width: auto;
+    position: relative;
+    top: 50px;
+    right: 150px;
+}
+
+.img{
+    color: black;
+    height: 550px;
+    width: 400px; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.img:hover{
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 5px #E45826;
+}
+
+.descAndTable{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text p{
+    color: white;
+    font-size: 1.8rem;
+    text-align: justify;
+    font-weight: 300;
+    display: flex;
+    margin-bottom: 40px;
+    line-height: 1.3em;
+}
+
+table{
+    width: 100%;
+}
+
+table, tr, td{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+    border-collapse: collapse;
+    border: 2px solid white;
+    text-align: center;
+    height: 60px;
+}
+
+td{
+    padding: .3em;
+}
+
+.categ{
+    color: #F0A500;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+/* HOBBIES */
+#hobbies{
+    background-color: #E45826;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hobbies p{
+    color: white;
+    font-weight: 300;
+    text-align: center;
+}
+
+#hobbies .bar{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-color: #F0A500;
+}
+
+#hobbiesDesc{
+    width: 75ch;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+}
+
+#hobbies .myHobbies{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 20px;
+}
+
+.basketball, .videoGames, .workout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5em;
+    background-color: #1B1A17;
+    border-radius: 40px;
+    width: 450px;
+    height: 450px;
+}
+
+#hobbies h3{
+    padding: 5px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#hobbies .hobbiesIcon{
+    fill: #F0A500;
+    height: 150px;
+    width: 150px;
+}
+
+#hobbies #basketball{
+    height: 125px;
+    width: 125px;
+    animation: bounce 0.5s ease-in-out infinite;
+}
+
+#hobbies #dumbell{
+    animation: bounce 3s ease-in-out infinite;
+}
+
+#hobbies #controller{
+    animation: tilt 1.5s ease infinite;
+}
+
+#hobbies h1, #hobbies h3{
+    color: white;
+    text-align: center;
+}
+
+#hobbies .desc{
+    font-size: 1.2rem;
+    width: 90%;
+}
+
+@keyframes bounce{
+    20%{
+        transform: translateY(0px);
+    }
+
+    60%{
+        transform: translateY(20px);
+
+    }
+
+    100%{
+        transform: translate(0px);
+    }
+}
+
+@keyframes tilt{
+    0%{
+        transform: rotate(0deg);
+    }
+    13%{
+        transform: rotate(-15deg);
+    }
+
+    26%{
+        transform: rotate(-30deg);
+    }
+
+    39%{
+        transform: rotate(-15deg);
+    }
+
+    52%{
+        transform: rotate(0deg);
+    }
+
+    65%{
+        transform: rotate(15deg);
+    }
+
+    78%{
+        transform: rotate(30deg);
+    }
+
+    91%{
+        transform: rotate(0deg);
+    }
+}
+
+/* PREFERENCES */
+#preferences{
+    background-color: #1B1A17;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+#preferences *{
+    color: white;
+    fill: #F0A500;
+}
+
+#preferences .bar{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-color: #F0A500;
+}
+
+.preferencesText{
+    font-weight: 300;
+}
+
+#preferences h1{
+    font-weight: 800;
+}
+
+#preferences h4{
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 10px; 
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+#philosophy{
+    margin-bottom: 3px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+#philosophy span{
+    font-style: italic;
+}
+
+.likesAndDislikes{
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.likes, .dislikes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #302E29;
+    height: 700px;
+    width: 700px;
+    border-radius: 40px;
+    position: relative;
+    padding: 100px 10px;
+}
+
+.dislikes{
+    bottom: -125px;
+}
+
+.likes{
+    bottom: -75px;
+}
+
+#thumbsUp, #thumbsDown{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    animation: tilt 1.5s ease-in-out infinite;
+}
+
+#thumbsUp{
+    left: -55px;
+    top: 210px;
+}
+
+#thumbsDown{
+    right: -50px;
+    top: 190px;
+}
+
+.thumbContainer{
+    background-color: #1B1A17;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#thumbContainerLike{
+    left: -100px;
+    top: 170px;
+}
+
+#thumbContainerDislike{
+    right: -90px;
+    top: 150px;
+}
+
+#preferences h3{
+    background-color: #E45826;
+    padding: 5px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px 20px;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+#preferences li{
+    font-size: 2.3rem;
+    margin: 5px 10px 5px 60px;
+}
+
+/* MUSIC TASTE */
+#musicTaste{
+    background-color: #E6D5B8;
+}
+
+.musicTasteContent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.musicTasteContent .images{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4em;
+    row-gap: 3.5em;
+}
+
+#rAndB, #opm, #rap, #indie{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.musicTasteContent .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(27, 26, 23, 0.9);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.musicTasteContent .images .album:hover .overlay{
+    display: flex;
+}
+
+.musicTasteContent .images .album:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#rAndB img, #opm img, #rap img, #indie img{
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+}
+
+.musicTasteContent .overlay .circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #1B1A17;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.musicTasteContent .overlay .circle #spotifySVG{
+    fill: #F0A500;
+    height: 70px;
+    width: 70px;
+}
+
+.musicTasteContent .overlay h3, .overlay p{
+    color: white;
+    text-align: center;
+}
+
+.musicTasteContent .overlay h3{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.musicTasteContent .overlay p{
+    font-weight: 300;
+    font-size: 0.8rem;
+    width: 30ch;
+    line-height: 1.5em;
+}
+
+.musicTasteContent .musicTasteText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.musicTasteContent .musicTasteText .musicNoteContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.musicTasteContent .musicTasteText .musicNote{
+    fill: #E45826;
+    position: absolute;
+}
+
+.musicTasteContent .musicTasteText .musicNote#m1{
+    top: -100px;
+    left: 0;
+    height: 70px;
+    width: 70px;
+    animation: noteOdd 1s ease infinite;
+}
+.musicTasteContent .musicTasteText .musicNote#m2{
+    top: -135px;
+    left: 90px;
+    height: 40px;
+    width: 40px;
+    transform: rotate(10deg);
+    animation: noteEven 1s ease infinite;
+}
+.musicTasteContent .musicTasteText .musicNote#m3{
+    top: -135px;
+    left: 155px;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-15deg);
+    animation: noteOdd 1s ease infinite;
+}
+.musicTasteContent .musicTasteText .musicNote#m4{
+    top: -80px;
+    left: 230px;
+    height: 30px;
+    width: 30px;
+    animation: noteEven 1s ease infinite;
+}
+.musicTasteContent .musicTasteText .musicNote#m5{
+    top: -125px;
+    left: 300px;
+    height: 50px;
+    width: 50px;
+    transform: rotate(10deg);
+    animation: noteOdd 1s ease infinite;
+}
+
+@keyframes noteOdd{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(10px);
+    }
+    40%{
+        transform: translateY(20px);
+    }
+    60%{
+        transform: translateY(10px);
+    }
+    80%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY();
+    }
+}
+
+@keyframes noteEven{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-10px);
+    }
+    40%{
+        transform: translateY(-20px);
+    }
+    60%{
+        transform: translateY(-10px);
+    }
+    80%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.musicTasteContent .musicTasteText h1{
+    color: #1B1A17;
+    font-size: 8rem;
+    width: 6ch;
+    line-height: .9em;
+    margin: 30px 0 10px 0;
+}
+
+.musicTasteContent .musicTasteText #musicTasteDesc{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.musicTasteContent .musicTasteText #guide{
+    font-weight: 800;
+    font-size: 1.6rem;
+    font-style: italic;
+    background-color: #E45826;
+    color: white;
+    border-radius: 60px;
+    padding: .3em .6em
+}
+
+
+/* INNER CIRCLE */
+#innerCircle{
+    background-color: rgb(64, 18, 1, 0.9);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#innerCircle #vertical{
+    height: 45px;
+    border: 4px solid #F0A500;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#innerCircle h1{
+    color: #E6D5B8;
+    font-weight: 800;
+    display: inline-block;
+}
+
+#innerCircle .slideContainer{
+    display: none;
+}
+
+#innerCircle .slides{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#innerCircle .slides svg{
+    fill: #E6D5B8;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+#innerCircle .slides svg:hover{
+    fill: #F0A500;
+    box-shadow: 0 0 20px 3px rgb(240, 165, 0, 0.5);
+}
+
+#innerCircle .slides .prev:active{
+    transform: translateX(-10px);
+}
+
+#innerCircle .slides .next:active{
+    transform: translateX(10px);
+}
+
+#innerCircle .slides .slideText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#innerCircle .slides .slideText .imgContainer{
+    height: 450px;
+    width: 350px;
+    border: 2px;
+    margin-right: 35px;
+    position: relative;
+    overflow: hidden;
+}
+
+#innerCircle .slides .slideText .imgContainer img{
+    height: 450px;
+    width: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: showUp 0.8s ease;
+}
+
+#innerCircle .slides .slideText .titleAndDesc h2{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+    background-color: #F0A500;
+    padding: 10px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0 30px 15px 30px;
+    animation: showDown 0.8s ease;
+}
+
+#innerCircle .slides .slideText .titleAndDesc p{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: justify;
+    width: 50ch;
+    margin: 0 30px;
+    animation: showDown 0.8s ease;
+}
+
+#innerCircle .slides .bgImg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    animation: fadeIn 0.5s ease;
+}
+
+#innerCircle .dotContainer{
+    text-align: center;
+}
+
+#innerCircle .dotContainer .dot{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: #E6D5B8;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+#innerCircle .dotContainer .dot:hover{
+    background-color: #F0A500;
+    box-shadow: 0 0 20px 5px rgb(240, 165, 0, 0.5);
+}
+
+#innerCircle .dotContainer .dot.active{
+    background-color: #F0A500;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes showUp{
+    from{
+        transform: translateY(1000px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes showDown{
+    from{
+        transform: translateY(-1000px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}

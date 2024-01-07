@@ -1,0 +1,162 @@
+body{
+    background-color: #1B1A17;
+}
+
+/* HEADER SECTION*/
+#projects{
+    border-bottom-color:#F0A500;
+    color: #F0A500;
+}
+
+/* SUBHEADER SECTION */
+h1{
+    color: white;
+    font-weight: 800;
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.subHeader{
+    display: flex;
+    justify-content: center;
+}
+
+#pubmatNav, #pptNav{
+    color: white;
+    padding: 10px 30px;
+    margin: 0px 30px 20px 30px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#pubmatNav:hover, #pptNav:hover, #pubmatNav.active, #pptNav.active{
+    color: #F0A500;
+    border-bottom-color: #F0A500;
+}
+
+/* CONTENT SECTION */
+#pubmats .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+#pubmats .row img{
+    width: 460px;
+    height: 590px;
+}
+
+#ppts .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#ppts .row img{
+    width: 500px;
+    height: 280px;
+}
+
+section{
+    display: none;
+}
+
+#ppts{
+    animation: slideToLeft 1s ease;
+}
+
+#pubmats{
+    animation: slideToRight 1s ease;
+}
+
+.row img:hover{
+    transform: scale(1.1);
+}
+
+@keyframes slideToLeft{
+    from{
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideToRight{
+    from{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1470px){
+    #pubmats .row img{
+        width: 400px;
+        height: 500px;
+    }
+    #ppts .row img{
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 1300px){
+    #pubmats .row img{
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 980px){
+    #pubmats .row img{
+        width: 250px;
+        height: 350px;
+    }
+    #ppts .row img{
+        width: 250px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 700px){
+    #ppts .row .contentSlide{
+        display: none;
+    }
+    #ppts .row .firstPage{
+        width: 70%;
+        height: 80%;
+    }
+    #pubmatNav, #pptNav{
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px){
+    #pubmats .row{
+        display: block;
+    }
+    #pubmats{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #pubmats .row img{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+    #pubmats .row{
+        margin: 0;
+    }
+}

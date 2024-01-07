@@ -1,0 +1,259 @@
+/* BACKGROUND SECTION */
+.backgroundContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.backgroundImage{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1B1A17;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+
+/* HEADER SECTION */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;
+    box-sizing: border-box;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #F0A500;
+    font-size: 2rem;
+    font-weight: 900;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+/* Navigation Bar */
+#home{
+    border-bottom-color:#F0A500;
+    color: #F0A500;
+}
+
+/* CONTENT SECTION */
+.content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 75vh;
+    margin: 2rem 3rem 0 3rem;
+}
+
+p{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.desc{
+    text-align: left;
+    width: 43ch;
+}
+
+h1{
+    font-size: 7rem;
+    color: #E45826;
+    margin: 0px;
+    padding: 0px;
+}
+
+.text #myResume{
+    text-decoration: none;
+}
+
+.resume svg{
+    fill: black;
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.resume{
+    text-align: center;
+    border: none;
+    background-color: #F0A500;
+    font-size: 1.2rem;
+    padding: .5em 1em;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+.resume:hover{
+    background-color: black;
+    color:#F0A500;
+    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.209);
+}
+
+.resume:hover svg{
+    fill: #F0A500;
+}
+
+.resume:active{
+    transform: scale(.9);
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 2%;
+    text-align: right;
+}
+
+.bar{
+    border:2.5px solid #E45826;
+    width: 50px;
+    margin-right: 1.5rem;
+    margin-bottom: .7rem;
+}
+
+#follow{
+    text-align: right;
+    margin-right: 1.5rem;
+}
+
+.socmed{
+    padding-right: 1.5%;
+}
+
+svg{
+    fill: #F0A500;
+    height: 35px;
+    width: 35px;
+    padding: 0;
+}
+
+.btn{
+    transition: all 0.3s ease;
+    margin-top: .5rem;
+    cursor: pointer;
+    border: none;
+    background-color: #1B1A17;
+    border-radius: 10px;
+    padding: .5em;
+    margin-left: 15px;
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+    background-color: #F0A500;
+}
+
+.btn:hover svg{
+    fill: #1B1A17
+}
+
+@media (max-width: 970px){
+    .text, .desc{
+        align-items: center;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 6.5rem;
+    }
+
+    p{
+        font-size: 1.8rem;
+    } 
+
+    .socials{
+        align-items: center;
+        padding-right: 0;
+    }
+
+    #follow{
+        margin: 0;
+        text-align: center;
+    }
+
+    .bar{
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 830px){
+    p{
+        font-size: 1.4rem;
+    }
+
+    h1{
+        font-size: 5.5rem;
+    }
+}
+
+@media (max-width: 650px){
+    p{
+        font-size: 1.2rem;
+        width: 10ch;
+    }
+
+    h1{
+        font-size: 4.5rem;
+    }
+
+    .resume{
+        font-size: 1rem;
+    }
+
+    #follow{
+        font-size: .8rem;
+    }
+
+    .btn svg{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 560px){
+    .resume, p{
+        font-size: .8rem;
+    }
+    
+    h1{
+        font-size: 4rem;
+    }
+}
+
+@media (max-height: 460px){
+    .socials{
+        margin-top: 20px;
+    }
+}

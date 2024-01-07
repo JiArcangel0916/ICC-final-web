@@ -1,0 +1,543 @@
+body{
+    background-color: #1B1A17;
+}
+
+/* HEADER SECTION*/
+#educAndExp{
+    border-bottom-color:#F0A500;
+    color: #F0A500;
+}
+
+
+/* CONTENT SECTION */
+h1{
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+p{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+#educSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#educSection h1, #educSection p{
+    color: white;
+    text-align: center;
+}
+
+#educSection h1{
+    margin-bottom: 15px;
+}
+
+#educSection p{
+    width: 75ch;
+}
+
+#educSection .progressContainer{
+    margin-top: 45px;
+    width: 90vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.head{
+    position: relative;
+    width: 70%;
+    margin: auto;
+    height: 100px;
+}
+
+ul.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.nav li{
+    list-style-type: none;
+    float: left;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+ul.nav li::after{
+    content: " ";
+    width: 25px;
+    height: 25px;
+    border: 4px solid #F0A500;
+    background-color: #1B1A17;
+    border-radius: 50%;
+    margin: 10px auto auto auto;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+ul.nav li:hover::after, ul.nav li.active::after{
+    background-color: #F0A500;
+}
+
+ul.nav li:hover::after{
+    box-shadow: 0 0 3px 5px rgb(240, 165, 0, 0.5);
+}
+
+.line{
+    width: 92%;
+    background-color: #F0A500;
+    height: 6px;
+    position: absolute;
+    left: 3%;
+    top: 63%;
+    z-index: -1;
+}
+
+.progressDesc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progressDescText{
+    height: 400px;
+    width: 800px;
+    background-color: #302E29;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.progressDescText #bookmark{
+    position: absolute;
+    top: -5px;
+    left: 3%;
+    fill: #E45826;
+    height: 90px;
+    width: 90px;
+}
+
+.progressDescText .description{
+    display: none;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    animation: appear 0.5s ease;
+}
+
+.progressDescText .description h2{
+    font-weight: 700;
+    font-size: 2.3rem;
+    margin-bottom: 5px;
+}
+.progressDescText .description h3{
+    font-weight: 700;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #F0A500;
+}
+.progressDescText .description .barContainer{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.progressDescText .description .bar{
+    border: 2px solid #E45826;
+    width: 60px;
+    text-align: center;
+}
+.progressDescText .description .descText{
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.schoolPics{
+    margin: 100px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+
+.schoolPics img{
+    height: 350px;
+    width: 600px;
+    border-radius: 30px;
+}
+
+.schoolPics .ImgContainer{
+    position: relative;
+}
+
+.schoolPics .ImgContainer .imgOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #E45826;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px;
+    transition: all 0.3s ease;
+}
+
+.schoolPics .ImgContainer .imgOverlay #agot{
+    top: 50px;
+}
+
+.schoolPics .ImgContainer .imgOverlay #toga{
+    top: 50px;
+}
+
+.schoolPics .ImgContainer .imgOverlay .circle{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 70px;
+    left: 40px;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: #F0A500;
+}
+
+.schoolPics .ImgContainer .imgOverlay svg{
+    fill: white;
+    height: 60px;
+    width: 60px;
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.schoolPics .ImgContainer .imgOverlay .miniHeaders h3{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.schoolPics .ImgContainer .imgOverlay .miniHeaders h4{
+    font-weight: 500;
+    font-style: italic;
+}
+.schoolPics .ImgContainer .imgOverlay .miniDesc{
+    font-weight: 500;
+    padding: 5px 10px;
+    background-color: #F0A500;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+.schoolPics .ImgContainer:hover .imgOverlay{
+    opacity: 0;
+    transform: rotateX(90deg);
+}
+
+.schoolPics .col1, .schoolPics .col2{
+    display: flex;
+    gap: 2em;
+}
+
+#expSection{
+    background-color: #E6D5B8;
+    height: 100vh;
+    padding: 20px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#expSection .expLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 60%;
+}
+
+#expSection .expLeft svg{
+    fill: white;
+    height: 70px;
+    width: 70px;
+    z-index: 2;
+    margin-bottom: 40px;
+}
+
+#expSection .expLeft #bgCircle{
+    width: 100px;
+    height: 100px;
+    background-color: #F0A500;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+
+#expSection .expLeft h2{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+#expSection .expLeft h1{
+    font-size: 6rem;
+    color: #E45826;
+    line-height: 80px;
+    margin: 15px 0;
+}
+
+#expSection .expLeft p{
+    font-weight: 500;
+    text-align: justify;
+    width: 95%;
+}
+
+.expRight #workImHead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 130px;
+    gap: 10px;
+}
+
+.expRight #workImHead p{
+    font-weight: 500;
+}
+
+.expRight #loc{
+    height: 50px;
+    width: 50px;
+    fill: #E45826;
+    animation: loc 1s ease infinite;
+}
+
+#expSection .expRight{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slideContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideContainer svg{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    fill: #302E29;
+}
+
+.slideContainer svg:hover{
+    fill: #E45826;
+    cursor: pointer;
+}
+
+.slideContainer svg:active{
+    fill: #E45826;
+}
+
+.slideContainer .next:active{
+    transform: translateX(10px);
+}
+
+.slideContainer .prev:active{
+    transform: translateX(-10px);
+}
+
+.slideContainer .slides{
+    display: none;
+    margin: 10px;
+}
+
+.slideContainer .slides img{
+    border-radius: 40px;
+    border: 10px solid #F0A500;
+}
+
+.dotContainer .dot{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #302E29;
+    display: inline-block;
+    margin: 7px 5px;
+    cursor: pointer;
+}
+
+.dotContainer .dot:hover, .dotContainer .dot.active{
+    background-color: #F0A500;
+}
+
+.dotContainer{
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes loc{
+    0%{
+        transform: translateY(-5px);
+    }
+    20%{
+        transform: translateY(-10px);
+    }
+    40%{
+        transform: translateY(-5px);
+    }
+    60%{
+        transform: translateY(0);
+    }
+    80%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1250px){
+    .headAndDesc p{
+        font-size: 1.2rem;
+    }
+
+    .schoolPics .ImgContainer, .schoolPics img{
+        height: 300px;
+        width: 400px;
+    }
+    .schoolPics .ImgContainer svg, .schoolPics .ImgContainer .circle{
+        display: none;
+    }
+    #expSection{
+        flex-wrap: wrap;
+        height: 200vh;
+        overflow: hidden;
+    }
+    #expSection .expLeft, #expSection .expRight{
+        width: 100%;
+    }
+    #expSection .expRight a{
+        z-index: 3;
+    }
+}
+
+@media (max-width: 880px){
+    #educSection .headAndDesc p{
+        font-size: 1rem;
+        width: 60ch;
+    }
+    .line{
+        width: 90%;
+        left: 5%;
+    }
+    .progressDescText{
+        height: 300px;
+        width: 700px;
+    }
+    .progressDescText #bookmark{
+        height: 70px;
+        width: 70px;
+    }
+    .progressDescText .description h2{
+        font-size: 2rem;
+    }
+    .progressDescText .description h3{
+        font-size: 1rem;
+    }
+    .progressDescText .description .descText{
+        font-size: 1rem;
+    }
+    .schoolPics .col1, .schoolPics .col2{
+        display: block;
+    }
+    .schoolPics{
+        gap: 0;
+    }
+    .schoolPics .col1 .ImgContainer, .schoolPics .col2 .ImgContainer{
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 680px){
+    ul.nav li{
+        font-size: 1rem;
+    }
+    .line{
+        top: 42%;
+    }
+    #educSection .headAndDesc p{
+        font-size: 1rem;
+        width: 40ch;
+    }
+    .progressDescText{
+        height: 250px;
+        width: 450px;
+    }
+    .progressDescText #bookmark{
+        height: 40px;
+        width: 40px;
+        left: 30px;
+    }
+    .progressDescText .description h2{
+        font-size: 1.2rem;
+    }
+    .progressDescText .description h3{
+        font-size: .8rem;
+    }
+    .progressDescText .description .descText{
+        font-size: .8rem;
+    }
+    .progressDescText .description .bar{
+        border: 2px solid #E45826;
+        width: 30px;
+    }
+    #expSection .expLeft h1{
+        font-size: 5rem;
+    }
+    #expSection .expRight #workImHead{
+        width: 100%;
+        align-self: center;
+    }
+}
+
+@media (max-width: 560px){
+    #expSection .expLeft h1{
+        font-size: 4rem;
+        line-height: 1em;
+    }
+    #expSection .expLeft h2{
+        font-size: 2rem;
+    }
+    #expSection .expLeft svg{
+        height: 50px;
+        width: 50px;
+    }
+    #expSection .expLeft #bgCircle{
+        height: 75px;
+        width: 75px;
+        left: -10px;
+    }
+}
