@@ -1,10 +1,89 @@
 @media (max-width: 1600px){
+    .basketball, .videoGames, .workout{
+        width: 400px;
+        height: 400px;
+    }
+    #hobbies .hobbiesIcon{
+        height: 120px;
+        width: 120px;
+    }
+    #hobbies #basketball{
+        height: 90px;
+        width: 90px;
+    }
+    .likesAndDislikes{
+        margin-top: 20px;
+    }
+    .likes, .dislikes{
+        height: 500px;
+        width: 600px;
+        bottom: 0;
+    }
     #innerCircle .slides svg{
         display: none;
     }
 }
 
 @media (max-width: 1480px){
+    #aboutMeSection{
+        height: 120vh;
+    }
+    .basketball, .videoGames, .workout{
+        width: 350px;
+        height: 350px;
+    }
+    #hobbies .hobbiesIcon{
+        height: 100px;
+        width: 100px;
+    }
+    #hobbies #basketball{
+        height: 70px;
+        width: 70px;
+    }
+    #hobbies .desc{
+        font-size: 1rem;
+    }
+    #hobbies .videoGames .desc, #hobbies .workout .desc{
+        font-size: 1rem;
+        width: 25ch;
+    }
+    .likes, .dislikes{
+        height: 400px;
+        width: 500px;
+        padding: 80px 10px;
+    }
+    #thumbsUp, #thumbsDown{
+        height: 90px;
+        width: 90px;
+    }
+    #thumbsUp{
+        top: 50px;
+        right: -25px;
+    }
+    #thumbsDown{
+        top: 50px;
+        right: -40px;
+    }
+    .thumbContainer{
+        height: 135px;
+        width: 135px;
+    }
+    #thumbContainerLike{
+        left: -70px;
+        top: 35px;
+    }
+    #thumbContainerDislike{
+        right: -60px;
+        top: 35px;
+    }
+    #preferences h3{
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+    #preferences li{
+        font-size: 2rem;
+        margin-top: 0;
+    }
     #innerCircle .slides .slideText .titleAndDesc p{
         font-size: 1.3rem;
         width: 40ch;
@@ -12,6 +91,13 @@
 }
 
 @media (max-width: 1220px){
+    #hobbies{
+        height: 125vh;
+    }
+    #hobbiesDesc{
+        width: 65ch;
+        margin-bottom: 10px;
+    }
     #rAndB, #opm, #rap, #indie{
         height: 200px;
         width: 200px;
@@ -36,7 +122,6 @@
     .musicTasteContent .musicTasteText #musicTasteDesc{
         font-size: 1.5rem;
     }
-    
     .musicTasteContent .musicTasteText #guide{
         font-weight: 800;
         font-size: 1.2rem;
@@ -45,6 +130,80 @@
 }
 
 @media (max-width: 1070px){
+    #aboutMeSection{
+        align-items: center;
+        height: 165vh;
+    }
+    #aboutTitle{
+        margin-bottom: 10px;
+    }
+    img{
+        height: 900px;
+        width: auto;
+        position: relative;
+        top: 20px;
+        right: 180px;
+    }
+    .img{
+        color: black;
+        height: 450px;
+        width: 300px; 
+        display: flex;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+    }
+    #aboutMeSection .text{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    #hobbies{
+        height: 145vh;
+    }
+    #hobbiesDesc{
+        width: 35ch;
+        margin-bottom: 5px;
+    }
+    #philosophy{
+        font-size: 1.2rem;
+    }
+    .likes, .dislikes{
+        height: 300px;
+        width: 350px;
+        padding: 30px 10px;
+    }
+    #thumbsUp, #thumbsDown{
+        height: 60px;
+        width: 60px;
+    }
+    #thumbsUp{
+        right: 0;
+        left: -30px;
+    }
+    #thumbsDown{
+        top: 50px;
+        right: -40px;
+    }
+    .thumbContainer{
+        height: 100px;
+        width: 100px;
+    }
+    #thumbContainerLike{
+        left: -45px;
+        top: 35px;
+    }
+    #thumbContainerDislike{
+        right: -60px;
+        top: 30px;
+    }
+    #preferences h3{
+        font-size: 1.8rem;
+    }
+    #preferences li{
+        font-size: 1.7rem;
+    }
     #innerCircle .slides .slideText .titleAndDesc p{
         font-size: 1.2rem;
         width: 30ch;
@@ -55,6 +214,25 @@
 }
 
 @media (max-width: 900px){
+    #aboutMeSection{
+        height: 170vh;
+    }
+    #hobbies{
+        height: 200vh;
+    }
+    #preferences{
+        height: 130vh;
+    }
+    #preferences h4{
+        font-size: 1.3rem;
+    }
+    #philosophy{
+        font-size: 1rem;
+    }
+    .likesAndDislikes{
+        gap: 1.4em;
+        flex-wrap: wrap;
+    }
     #innerCircle .slides .slideText .titleAndDesc p{
         font-size: 1rem;
         width: 30ch;
@@ -74,6 +252,67 @@
 }
 
 @media (max-width: 650px){
+    #aboutMeSection{
+        height: 160vh;
+    }
+    #hobbies{
+        height: 190vh;
+    }
+    #preferences{
+        height: 125vh;
+    }
+    .text p{
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        width: 95%;
+    }
+    table{
+        width: 90%;
+    }
+    table, tr, td{
+        font-size: 1rem;
+        height: 60px;
+        padding: 20px;
+    }
+    #philosophy{
+        width: 40ch;
+    }
+    .preferencesText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #hobbiesDesc{
+        font-size: 1rem;
+    }
+    #preferences h1{
+        font-size: 3rem;
+    }
+    #musicTaste{
+        height: 180vh;
+    }
+    .musicTasteContent{
+        flex-direction: column-reverse;
+        gap: 1em;
+    }
+    .musicTasteContent .images{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        row-gap: 2em;
+    }
+    .musicTasteContent .musicTasteText{
+        align-items: center;
+        text-align: center;
+    }
+    .musicTasteContent .musicTasteText .musicNoteContainer{
+        margin-top: 90px;
+    }
+    #innerCircle h1{
+        font-size: 2.5rem;
+    }
+    #innerCircle #vertical{
+        height: 30px;
+    }
     #innerCircle .slides .slideText .titleAndDesc p{
         font-size: 1rem;
         width: 20ch;
