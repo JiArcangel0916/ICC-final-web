@@ -322,3 +322,37 @@
         justify-content: center;
     }
 }
+
+@media (max-height: 720px){
+    #aboutMeSection{
+        height: 180vh;
+    }
+
+    #hobbies{
+        height: 210vh;
+    }
+
+    #preferences{
+        height: 140vh;
+    }
+
+    #musicTaste{
+        height: 200vh;
+    }
+}
+
+@media (max-height: 650px){
+    #aboutMeSection{
+        height: 195vh;
+    }
+
+    #hobbies, #musicTaste{
+        height: 230vh;
+    }
+}
+
+@media (max-height: 580px){
+    #aboutMeSection, #hobbies, #preferences, #musicTaste{
+        height: 260vh;
+    }
+}
