@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albrecht Arcangel | Website</title>
+    <link rel="stylesheet" href="/styles/educAndExp.css">
+    <link rel="stylesheet" href="/styles/initial.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><a href="index.html">AZAA</a></div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html" id="home">HOME</a></li>
+                <li><a href="aboutMe.html" id="aboutMe">ABOUT ME</a></li>
+                <li><a href="educAndExp.html" id="educAndExp">EDUCATION & EXPERIENCE</a></li>
+                <li><a href="projects.html" id="projects">PROJECTS</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" onclick="toggleNavBar()">
+            <div class="burger" id="burger1"></div>
+            <div class="burger" id="burger2"></div>
+            <div class="burger" id="burger3"></div>
+        </button>
+    </div>
+
+    <section id="educSection">
+        <div class="headAndDesc">
+            <h1>EDUCATION</h1>
+            <p>I’ve always thought of education as something powerful to hold onto. 
+                The opportunity to have it made me value the challenges that not only granted me knowledge, 
+                but also became the key towards forming bonds and honing my skills.</p>
+        </div>
+
+        <div class="progressContainer">
+            <div class="head">
+                <ul class="nav">
+                    <li class="st st1" onclick="showDesc(1);">
+                        SAS
+                    </li>
+    
+                    <li class="st st2" onclick="showDesc(2);">
+                        TES
+                    </li>
+    
+                    <li class="st st3" onclick="showDesc(3);">
+                        LPCNSHS
+                    </li>
+    
+                    <li class="st st4" onclick="showDesc(4);">
+                        PLM
+                    </li>
+                </ul>
+    
+                <div class="line">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="progressDesc">
+                <div class="progressDescText">
+            
+                    <div class="description" style="display: flex;">
+                        <div class="descHeader">
+                            <h2>Saint Anthony School</h2>
+                            <h3>Kinder to Grade 2</h3>
+                        </div>
+                        
+                        <div class="barContainer">
+                            <div class="bar"></div>
+                        </div>
+
+                        <div class="descText">
+                            Where I learned the basic things a child has and can learn. Surprisingly, this school was my first encounter with a computer and its hardware because we had a “Computer” subject on 1st grade. Although it was simple, it made me familiarize with such things. 
+                        </div>  
+                    </div>
+
+                    <div class="description">
+                        <div class="descHeader">
+                            <h2>Talon Elementary School</h2>
+                            <h3>Grade 3 to Grade 6</h3>
+                        </div>
+
+                        <div class="barContainer">
+                            <div class="bar"></div>
+                        </div>
+                        
+                        <div class="descText">
+                            Despite enrolling late in 3rd grade, I got to catch up to the lessons, made friends, and graduated successfully. This was where I joined various quiz bees and contests that developed the skills I have. I haven’t really had an encounter with computers since it's only a public school and had fewer resources. 
+                        </div>  
+                    </div>
+
+                    <div class="description">
+                        <div class="descHeader">
+                            <h2>Las Piñas City National <br>Science High School</h2>
+                            <h3>Grade 7 to 12</h3>
+                        </div>
+
+                        <div class="barContainer">
+                            <div class="bar"></div>
+                        </div>
+
+                        <div class="descText">
+                            Amidst demanding monthly activities, I gained lasting friendships and discovered a passion for programming when introduced to HTML and Arduino. Despite the challenges of being a science-high student and adapting to a new setup during the pandemic, I enjoyed the most fulfilling phase of my academic journey, graduating as a consistent honor student. 
+                        </div>  
+                    </div>
+
+                    <div class="description">
+                        <div class="descHeader">
+                            <h2>Pamantasan ng Lungsod <br>ng Maynila</h2>
+                            <h3>Current</h3>
+                        </div>
+
+                        <div class="barContainer">
+                            <div class="bar"></div>
+                        </div>
+
+                        <div class="descText">
+                            My interest in programming and web development started ever since I was a child, but were heightened when I got to realize that college is the time to focus solely on it. That’s why I’m looking forward to learning more about these things, enhancing my skills, and hopefully being able to apply them in the future. 
+                        </div>  
+                    </div>
+                    <svg id="bookmark" xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><path d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"/></svg>
+                </div>
+            </div>
+
+            <div class="schoolPics">
+                <div class="col1">
+                    <div class="ImgContainer">
+                        <img src="/images/schools/SAS.png" id="SASPic">
+                        <div class="imgOverlay">
+                            <div class="circle"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="20" viewBox="0 0 640 512"><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/></svg>
+                            <div class="miniHeaders">
+                                <h3>Saint Anthony School</h3>
+                                <h4>Kinder to Grade 2</h4>
+                            </div>
+                            <div class="miniDesc">
+                                Hover Here!
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="ImgContainer">
+                        <img src="/images/schools/TES.png" id="TESPic">
+                        <div class="imgOverlay">
+                            <div class="circle"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="20" viewBox="0 0 640 512"><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/></svg>
+                            <div class="miniHeaders">
+                                <h3>Talon Elementary School</h3>
+                                <h4>Grade 3 to Grade 6</h4>
+                            </div>
+                            <div class="miniDesc">
+                                Hover Here!
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col2">
+                    <div  class="ImgContainer">
+                        <img src="/images/schools/LPSCI.png" id="LPSCIPic">
+                        <div class="imgOverlay">
+                            <div class="circle"id="agot"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="20" viewBox="0 0 640 512"><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/></svg>
+                            <div class="miniHeaders">
+                                <h3>Las Piñas City National Science High School</h3>
+                                <h4>Grade 7 to Grade 12</h4>
+                            </div>
+                            <div class="miniDesc">
+                                Hover Here!
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="ImgContainer">
+                        <img src="/images/schools/PLM.png" id="PLMPic">
+                        <div class="imgOverlay">
+                            <div class="circle"id="toga"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="20" viewBox="0 0 640 512"><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/></svg>
+                            <div class="miniHeaders">
+                                <h3>Pamantasan ng Lungsod ng Maynila</h3>
+                                <h4>Current</h4>
+                            </div>
+                            <div class="miniDesc">
+                                Hover Here!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="expSection">
+        <div class="expLeft">
+            <div id="bgCircle"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><path d="M142.4 21.9c5.6 16.8-3.5 34.9-20.2 40.5L96 71.1V192c0 53 43 96 96 96s96-43 96-96V71.1l-26.1-8.7c-16.8-5.6-25.8-23.7-20.2-40.5s23.7-25.8 40.5-20.2l26.1 8.7C334.4 19.1 352 43.5 352 71.1V192c0 77.2-54.6 141.6-127.3 156.7C231 404.6 278.4 448 336 448c61.9 0 112-50.1 112-112V265.3c-28.3-12.3-48-40.5-48-73.3c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V336c0 97.2-78.8 176-176 176c-92.9 0-168.9-71.9-175.5-163.1C87.2 334.2 32 269.6 32 192V71.1c0-27.5 17.6-52 43.8-60.7l26.1-8.7c16.8-5.6 34.9 3.5 40.5 20.2zM480 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+            <h2>EXPERIENCE</h2>
+            <h1>Work Immersion</h1>
+            <p>I had the opportunity to gain real-world experience at E. Zarate Hospital in Las Piñas City. 
+                Despite the hospital's medical focus, my responsibilities centered around managing the patient directory. 
+                This hands-on encounter offered a glimpse into the workings of a hospital, giving valuable insights into my 
+                potential future career.</p>
+        </div>
+        <div class="expRight">
+            <div id="workImHead">
+            <p>E. Zarate Hospital</p> 
+            <span><svg id="loc" xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg></span>
+            </div>
+
+            <div class="slideContainer">
+                <a onclick="addSlide(-1);"><svg class="prev" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z"/></svg></a>
+                
+                <div class="slides" style="display: block;">
+                    <img src="/images/workIm/1.png">
+                </div>
+
+                <div class="slides">
+                    <img src="/images/workIm/2.png">
+                </div>
+
+                <div class="slides">
+                    <img src="/images/workIm/3.png">
+                </div>
+
+                <div class="slides">
+                    <img src="/images/workIm/4.png">
+                </div>
+
+                <div class="slides">
+                    <img src="/images/workIm/5.png">
+                </div>
+
+                <div class="slides">
+                    <img src="/images/workIm/6.png">
+                </div>
+
+                <a onclick="addSlide(1)"><svg class="next" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg></a>
+            </div>
+            
+            <div class="dotContainer">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+    </section>
+
+    <script src="/scripts/navbar.js"></script>
+    <script src="/scripts/progressDesc.js"></script>
+    <script src="/scripts/workIm.js"></script>
+</body>

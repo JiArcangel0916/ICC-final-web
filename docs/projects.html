@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albrecht Arcangel | Website</title>
+    <link rel="stylesheet" href="/styles/projects.css">
+    <link rel="stylesheet" href="/styles/initial.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><a href="index.html">AZAA</a></div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html" id="home">HOME</a></li>
+                <li><a href="aboutMe.html" id="aboutMe">ABOUT ME</a></li>
+                <li><a href="educAndExp.html" id="educAndExp">EDUCATION & EXPERIENCE</a></li>
+                <li><a href="projects.html" id="projects">PROJECTS</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" onclick="toggleNavBar()">
+            <div class="burger" id="burger1"></div>
+            <div class="burger" id="burger2"></div>
+            <div class="burger" id="burger3"></div>
+        </button>
+    </div>
+
+    <main>
+        <h1>PROJECTS</h1>
+        <div class="subHeader">
+            <p id="pubmatNav" class="subheading active" onclick="currentPage(1);">Publication Materials</p>
+            <p id="pptNav" class="subheading" onclick="currentPage(2);">PowerPoint Presentations</p>
+        </div>
+
+        <section class="projects" id="pubmats" style="display: block;">
+            <div class="row">
+                <img src="/images/pubmat/1.png">
+                <img src="/images/pubmat/2.png">
+                <img src="/images/pubmat/3.png">
+            </div>
+
+            <div class="row">
+                <img src="/images/pubmat/4.png">
+                <img src="/images/pubmat/5.png">
+                <img src="/images/pubmat/6.png">
+            </div>
+
+            <div class="row">
+                <img src="/images/pubmat/mockup/1.png">
+                <img src="/images/pubmat/mockup/2.png">
+                <img src="/images/pubmat/poster/1.png">
+            </div>
+        </section>
+
+        <section class="projects" id="ppts">
+            <div class="row">
+                <img src="/images/ppt/1.png" class="firstPage">
+                <img src="/images/ppt/2.png" class="contentSlide">
+                <img src="/images/ppt/3.png" class="contentSlide">
+            </div>
+
+            <div class="row">
+                <img src="/images/ppt/4.png" class="firstPage">
+                <img src="/images/ppt/5.png" class="contentSlide">
+                <img src="/images/ppt/6.png" class="contentSlide">
+            </div>
+
+            <div class="row">
+                <img src="/images/ppt/7.png" class="firstPage">
+                <img src="/images/ppt/8.png" class="contentSlide">
+                <img src="/images/ppt/9.png" class="contentSlide">
+            </div>
+
+            <div class="row">
+                <img src="/images/ppt/10.png" class="firstPage">
+                <img src="/images/ppt/11.png" class="contentSlide">
+                <img src="/images/ppt/12.png" class="contentSlide">
+            </div>
+
+            <div class="row">
+                <img src="/images/ppt/13.png" class="firstPage">
+                <img src="/images/ppt/14.png" class="contentSlide">
+                <img src="/images/ppt/15.png" class="contentSlide">
+            </div>
+        </section>
+
+    </main>
+
+    <script src="/scripts/navbar.js"></script>
+    <script src="/scripts/projects.js"></script>
+</body>
