@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albrecht Arcangel | Website</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/initial.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;500;800&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="backgroundContainer">
+        <img src="images/self/background.png" alt="Background Image" class="backgroundImage">
+    </div>
+    <div class="overlay"></div>
+    <div class="content">
+
+        <div class="header">
+            <div class="logo"><a href="index.html">AZAA</a></div>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html" id="home">HOME</a></li>
+                    <li><a href="docs/aboutMe.html" id="aboutMe">ABOUT ME</a></li>
+                    <li><a href="docs/educAndExp.html" id="educAndExp">EDUCATION & EXPERIENCE</a></li>
+                    <li><a href="docs/projects.html" id="projects">PROJECTS</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" onclick="toggleNavBar()">
+                <div class="burger" id="burger1"></div>
+                <div class="burger" id="burger2"></div>
+                <div class="burger" id="burger3"></div>
+            </button>
+        </div>
+
+        <div class="text">
+            <p>Hi, I'm</p>
+            <h1>Jian.</h1>
+            <p class="desc">A first year BS in Computer Science student in Pamantasan ng Lungsod ng Maynila.</p>
+            <a href="ArcangelResume.pdf" download="ArcangelResume" id="myResume"><button class="resume">Download Resume<svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM376.9 294.6L269.8 394.5c-3.8 3.5-8.7 5.5-13.8 5.5s-10.1-2-13.8-5.5L135.1 294.6c-4.5-4.2-7.1-10.1-7.1-16.3c0-12.3 10-22.3 22.3-22.3l57.7 0 0-96c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 96 57.7 0c12.3 0 22.3 10 22.3 22.3c0 6.2-2.6 12.1-7.1 16.3z"/></svg></button></a>
+        </div>
+
+        <div class="socials">
+            <div class="bar"></div>
+            <div id="follow">FOLLOW ME HERE!</div>
+            <div class="socmed">
+                <button class="btn"><a href="https://www.facebook.com/albrechtarcangel/" target="_blank" ><svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></a></button>
+                <button class="btn"><a href="https://www.instagram.com/apolinario.arcangel/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></button>
+                <button class="btn"><a href="https://twitter.com/Jiiiiiii_A" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a></button>
+            </div>
+        </div>
+
+    </div>
+    <div class="formSection">
+
+        <p class="formTitle">Let's keep in touch. Send me a message here!</p>
+
+        <form id="contact-form">
+            <label for="name">Your Name</label>
+            <input id="name" type="text" name="name" placeholder="Ex. Juan Dela Cruz" required>
+            <label for="email">Your Email</label>
+            <input id="email" type="email" name="email" placeholder="juandelacruz@gmail.com" required>
+            <textarea name="message" placeholder="Your message" required></textarea>
+            <button class="sendEmail" type="submit">Send</button>
+        </form>
+
+    </div>
+
+    <script src="scripts/navbar.js"></script>
+    <script defer src="scripts/home.js"></script>
+</body>
+</html>
