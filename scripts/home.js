@@ -24,7 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       emailjs.sendForm(serviceId, templateId, this)
-        .then(() => alert('Message sent!'))
+        .then(() => {
+          alert('Message sent!');
+          location.reload();
+        })
         .catch(error => alert('Failed to send email ' + JSON.stringify(error)));
     });
   }
